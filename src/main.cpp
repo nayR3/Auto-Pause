@@ -159,6 +159,11 @@ class $modify(PlayLayer) {
         g_paused = true;
     }
     void updateProgressbar() {
+        // skip pausing in practice or test mode
+        if (this->m_isPracticeMode || this->m_isTestMode) {
+            PlayLayer::updateProgressbar();
+            return;
+        }
         if (state == GameState::Level && !shouldMute && !this->m_isPracticeMode && !this->m_isTestMode) {
             float currentP = getCurrentPercent();
             double muteP = Mod::get()->getSettingValue<double>("muteP"); // read live
@@ -177,6 +182,11 @@ class $modify(PlayLayer) {
         PlayLayer::resetLevel();
     }
     void destroyPlayer(PlayerObject* player, GameObject* object) {
+        // skip pausing in practice or test mode
+        if (this->m_isPracticeMode || this->m_isTestMode) {
+            PlayLayer::destroyPlayer(player, object);
+            return;
+        }
         if (!deathHandled) {
             double muteP = Mod::get()->getSettingValue<double>("muteP");
             if (getCurrentPercent() >= muteP) {
