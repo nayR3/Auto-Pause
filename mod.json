@@ -19,16 +19,15 @@
         }
 	},
     "settings": {
-		"settings": {
-			"open-menu": {
-				"type": "custom:open-menu"
-			}
-		},
+		"title-setting-example": {
+		"type": "title",
+		"name": "Go to settings > options > keys to set keybind."
+	},
 		"muteP": {
     		"type": "float",
 			"name": "Mute Percentage",
 			"description": "What percent to mute background media at.",
-			"default": 50.0,
+			"default": 40.0,
 			"min": 0.0,
 			"max": 100.0,
 			"control": {

@@ -1,9 +1,3 @@
-# My Awesome Mod
+# Hi.
 
-This is my awesome mod, that does **all** the awesome stuff!
-
-If you like this mod, please check [my other mod](mod:my.other-mod)!
-
-## Credits
-
-[Join my Discord](https://discord.gg/K9Kuh3hzTC)! Thanks to [Hu Tao](https://www.youtube.com/watch?v=8oap-n_OEgc) for helping with the mod!
+This mod will allow you to auto pause, mute, or deafen any background media while in a level. If you're in a call, listening to youtube, spotify, or any other audio platform, this mod lets you mute it automatically so you can focus. It works like auto deafen, but for any application.
