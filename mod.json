@@ -1,0 +1,51 @@
+{
+    "geode": "5.3.0",
+    "gd": {
+        "win": "2.2081"
+    },
+    "id": "nayr.auto-pause",
+    "name": "Auto Pause",
+    "version": "2.0.0",
+    "developer": "nayR",
+    "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "settings": {
+		"pause-key": {
+			"type": "keybind",
+			"name": "Pause Key",
+			"description": "Keybind as set in target application. (Only supports single key!)",
+			"default": "Space"
+		},
+		"muteP": {
+    		"type": "float",
+			"name": "Mute Percentage",
+			"description": "What percent to mute background media at.",
+			"default": 40.0,
+			"min": 0.0,
+			"max": 100.0,
+			"control": {
+				"arrows": false,
+				"arrow-step": 0.1,
+				"big-arrows": false,
+				"big-arrow-step": 0.5,
+				"slider": true,
+				"slider-step": 0.1,
+				"input": true
+			}
+		},
+		"media-app": {
+			"type": "file",
+			"name": "Media / Call App",
+			"description": "Executable to send pause/unpause keys to",
+			"default": "C:/Program Files/Firefox Developer Edition/firefox.exe",
+			"control": {
+				"dialog": "open",
+				"filters": [
+					{
+						"files": ["*.exe", "*.so", "*.dmg"],
+						"description": "Executable programs"
+					}
+				]
+			}
+		}
+	}
+}
